@@ -17,9 +17,8 @@ def get_distance(i, j, coordinates):
 
 
 def check_all_connected(connections, total_nodes):
-    """Checks if all nodes are inside a single connected component."""
     visited = set()
-    queue = [0]  # start BFS from node 0
+    queue = [0] 
     visited.add(0)
 
     while queue:
@@ -56,3 +55,4 @@ for dist, a, b in distances:
     if check_all_connected(connections, n):
         print(coordinates[a][0] * coordinates[b][0])
         break
+
